@@ -14,9 +14,9 @@
 
 	function insertInput($name, $email, $address, $username, $password)
 	{
-		$outcome = $this->db->query("insert into register (name, email, address, username) values(".$name.", ".$email.", ".$address.", ".$username.", ".$password.")");
+		$outcome = $this->db->query("insert into register (name, email, address, username,password) values('".$name."','".$email."','".$address."','".$username."','".$password."')");
 		
-	return $outcome->result();
+		return $outcome;
 	}
 
 	
