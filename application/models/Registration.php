@@ -19,6 +19,12 @@
 		return $outcome;
 	}
 
+
+function changePassword($user,$oldpassword,$newpassword)
+{
+
+$this->db->query();
+}
 	
 	
 }

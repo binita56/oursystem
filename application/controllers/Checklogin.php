@@ -22,6 +22,13 @@
 					if($password==$value->password)	
 						{
 							$pass="true";
+							$this->load->library('session');
+							$data = array(
+								"name" => $username,
+								"address" => $value->address,
+								"email"=>$value->email
+								);
+							$this->session->set_userdata($data);
 							header("location: home");
 
 						}

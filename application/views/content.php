@@ -16,4 +16,6 @@
 </nav>
 
 <br><br>
-<h1>Welcome! to homepage</h1>
+<h1>Welcome! to homepage<br><br> <?php echo "Name : ".$name."<br><br>"."Email : ".$email. "<br><br>Address : ".$address?><hr></h1>
+
+<a href="logout"><button type="button" class="btn btn-sm btn-default">Logout <?php echo $name ?></button></a>
